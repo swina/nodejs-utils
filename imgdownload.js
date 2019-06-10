@@ -18,7 +18,7 @@ async.each(records,
 
   function(item,cb){
         var dest = path + item.name + '.jpg';
-        https.get(  item.img , (res) => {
+        https.get(  item.url , (res) => {
           if (res.statusCode !== 200) {
               var err = new Error('File couldn\'t be retrieved');
               err.status = res.statusCode;
