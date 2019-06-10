@@ -1,4 +1,3 @@
-//d
 var https = require('https');
 var fs = require('fs');
 var async = require('async');
